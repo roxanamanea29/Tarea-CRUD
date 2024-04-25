@@ -34,14 +34,14 @@
 <div class="container my-5" >
 
     <div class="container my-5" style="background-color: rgba(0, 0, 0, 0.05);" >
-        <h1 class="text-center mb-4 rounded-bottom" style="background-color: rgba(216, 203, 199);">Contacta con nosotros</h1>
+        <h1 class="text-center shadow mb-4 rounded-bottom" style="background-color: rgba(216, 203, 199);">Contacta con nosotros</h1>
         <h3 class="text-center mb-5">Rellena el formulario o llámanos por teléfono</h3>
         <div class="row justify-content-center">
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex">
                 <div class="card flex-fill">
                     <img src="/img/direccion.png" class="card-img-top img-fluid " alt="Dirección"
                          style="height: 300px; object-fit: cover;">
-                    <div class="card-body">
+                    <div class="card-body card-body shadow p-md-3 p-2">
                         <h5 class="card-title">Dirección</h5>
                         <p class="card-text">123 Calle Innovación,</p>
                         <a href="https://maps.google.com" target="_blank" class="btn btn-light">Ver en Mapa</a>
@@ -52,7 +52,7 @@
                 <div class="card">
                     <img src="/img/mail.png" class="card-img-top img-fluid" alt="Email"
                          style="height: 300px; ">
-                    <div class="card-body">
+                    <div class="card-body card-body shadow p-md-3 p-2 ">
                         <h5 class="card-title">Correo Electrónico</h5>
                         <p class="card-text">soporte@todotrove.com</p>
                         <a href="mailto:soporte@todotrove.com" class="btn btn-light">Enviar Email</a>
@@ -63,7 +63,7 @@
                 <div class="card">
                     <img src="/img/telefono.png" class="card-img-top img-fluid" alt="Teléfono"
                          style="height: 300px; object-fit: cover;">
-                    <div class="card-body">
+                    <div class="card-body card-body shadow p-md-3 p-2">
                         <h5 class="card-title">Teléfono</h5>
                         <p class="card-text">+34 912 345 678</p>
                         <a href="tel:+34912345678" class="btn btn-light">Llamar Ahora</a>
@@ -91,7 +91,7 @@
                   rows="3"></textarea>
     </div>
     <div class="py-3">
-        <button type="submit" class="btn btn-light col-12 border ">Enviar</button>
+        <button type="submit" class="btn btn-light col-12 border shadow" style="background-color: rgba(216, 203, 199);">Enviar</button>
     </div>
 </div>
 </div>
@@ -100,24 +100,24 @@
 <footer class="bg-light text-center text-lg-start">
     <div class="container p-4">
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
 
                 <img src="/img/4.png" alt="Logo" style="height: 80px;" >
-                <p >Maximiza tu productividad con nosotros. Explora herramientas diseñadas para hacer tu vida más fácil.</p>
+                <p class="text-center">Maximiza tu productividad con nosotros. Explora herramientas diseñadas para hacer tu vida más fácil.</p>
             </div>
             <div class="col-lg-4 col-m d-6 mb-4">
-                <h5 class="text-uppercase font-weight-bold">Enlaces Rápidos</h5>
-                <ul class="list-unstyled">
+                <h5 class="text-uppercase font-weight-bold text-center">Enlaces Rápidos</h5>
+                <ul class="list-unstyled text-center">
                     <li><a th:href="@{/tarea/home}"class="text-dark">Inicio</a></li>
                     <li><a th:href="@{/tarea/}" class="text-dark">Tareas</a></li>
                     <li><a th:href="@{/tarea/contacto}" class="text-dark">Contacto</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-                <h5 class="text-uppercase font-weight-bold">Síguenos</h5>
-                <a href="https://www.facebook.com" class="text-info me-4"><i class="fab fa-facebook-f"></i></a>
+            <div class="col-lg-4 col-md-12 mb-4 text-center">
+                <h5 class="text-uppercase font-weight-bold mb-7 ">Síguenos</h5>
+                <a href="https://www.facebook.com" class="text-center text-info me-4"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.twitter.com" class="text-info me-4"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com" class="text-info me-4"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com" class="text-info mb-6 pb-3"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>

@@ -34,11 +34,11 @@
 </nav>
 
 
-<div class="container" style="background-color: rgba(0, 0, 0, 0.05);">
+<div class="container rounded" style="background-color: rgba(0, 0, 0, 0.05);">
     <h1 class="shadow text-center mt-5 mb-4 mx-3 rounded-bottom" style="background-color: rgba(216, 203, 199);" >Lista de tareas</h1>
     <div class="pb-2">
         <a th:href="@{/tarea/add}">
-            <button type="" class="btn col-1" style="background-color: rgba(216, 203, 199);">Alta</button>
+            <button type="" class=" shadow btn  mx-3" style="background-color: rgba(216, 203, 199);">Alta</button>
         </a>
     </div>
     <div class="row">
@@ -48,7 +48,7 @@
                 <table class="table">
                     <thead>
                     <tr class="text-left">
-                        <th>Id</th>
+
                         <th>Nombre</th>
                         <th>Descripción</th>
                         <th>Realizada</th>
@@ -57,10 +57,9 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <!-- las tareas -->
+
 
                     <tr th:each=" tarea : ${tareas}">
-                        <td th:text="${tarea.id}"></td>
                         <td th:text="${tarea.nombre}"></td>
                         <td th:text="${tarea.descripcion}"></td>
                         <td th:text="${tarea.realizada}"></td>
@@ -83,7 +82,7 @@
             </div>
         </main>
         <aside class="col-lg-3">
-            <div class="p-3 bg-light">
+            <div class=" shadow p-3 rounded mt-5 mx-3 mb-4" style="background-color: rgba(216, 203, 199);" >
                 <h4>Useful Links</h4>
                 <ul>
                     <li><a href="#">Tus prioridades..</a></li>
@@ -91,8 +90,7 @@
                 </ul>
             </div>
 
-            <img src="/img/4.png" class="img-fluid" style="max-height: 200px;" alt="logo">
-            <p class="lh-1 mt-lg-auto" style="font-weight: bold; font-size: large">Ideas para organizar tu agenda</p>
+            <p class="lh-1 mt-lg-auto" style="font-weight: bold; font-size: large"><br><br>Ideas para organizar tu agenda</p>
             <p class="lh-1" style="font-weight: bold;"> Prioriza tus Tareas</p>
             <p class="lh-sm">Comienza listando todas las tareas que necesitas realizar durante el día y luego
                 priorízalas.</p>
@@ -107,33 +105,34 @@
             <p class="lh-base" style="font-weight: bold;">5. Establece Metas Realistas</p>
             <p class="lh-lg">Sé realista acerca de lo que puedes lograr en un día. Sobrecargar tu agenda puede llevarte
                 a la frustración y al agotamiento. Asegúrate de dejar algo de espacio entre tareas para imprevistos.</p>
-
+            <div class="d-flex justify-content-center align-items-center" style="height: 40vh;">
+                <img src="/img/4.png" class="shadow img-fluid mx-4 mb-2" alt="logo" style="max-height: 200px;">
+            </div>
 
         </aside>
     </div>
 </div>
 <footer class=" text-center text-lg-start">
-    <div class="container p-4">
+    <div class="container p-1">
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
 
                 <img src="/img/4.png" alt="Logo" style="height: 80px;" >
-               <!-- <p >Maximiza tu productividad con nosotros. Explora herramientas diseñadas para hacer tu vida más fácil.</p>-->
-                <p>Organiza tu trabajo y tu vida!</p>
+                <p class="text-center">Maximiza tu productividad con nosotros. Explora herramientas diseñadas para hacer tu vida más fácil.</p>
             </div>
             <div class="col-lg-4 col-m d-6 mb-4">
-                <h5 class="text-uppercase font-weight-bold">Enlaces Rápidos</h5>
-                <ul class="list-unstyled">
+                <h5 class="text-uppercase font-weight-bold text-center">Enlaces Rápidos</h5>
+                <ul class="list-unstyled text-center">
                     <li><a th:href="@{/tarea/home}"class="text-dark">Inicio</a></li>
                     <li><a th:href="@{/tarea/}" class="text-dark">Tareas</a></li>
                     <li><a th:href="@{/tarea/contacto}" class="text-dark">Contacto</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-                <h5 class="text-uppercase font-weight-bold">Síguenos</h5>
-                <a href="https://www.facebook.com" class="text-info me-4"><i class="fab fa-facebook-f"></i></a>
+            <div class="col-lg-4 col-md-12 mb-4 text-center">
+                <h5 class="text-uppercase font-weight bold mb-7 ">Síguenos</h5>
+                <a href="https://www.facebook.com" class="text-center text-info me-4"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.twitter.com" class="text-info me-4"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com" class="text-info me-4"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com" class="text-info mb-6 pb-3"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
